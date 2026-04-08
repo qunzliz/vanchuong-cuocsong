@@ -1,0 +1,372 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "FC-Daypon";
+  src: url("../fonts/FC-Daypon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid_full-width {
+  width: 100%;
+}
+
+.grid_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  transform: scale(0);
+}
+
+.login__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000063;
+  animation: backwards;
+}
+
+.login.active-popup {
+  transform: scale(1);
+}
+
+.login__body {
+  width: 300px;
+  height: 330px;
+  background: transparent;
+  margin: auto;
+  border-radius: 30px;
+  padding: 0px 10px;
+  color: #fff;
+  border: 1px solid #ffffff93;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.1s ease,
+    height 1s ease;
+  overflow: hidden;
+}
+
+.login__body.active {
+  height: 400px;
+}
+
+.login__inner-login {
+  transition: transform 0.3s ease;
+  transform: translateY(7px);
+}
+
+.login__body.active .login__inner-login {
+  transform: translateX(-350px);
+}
+
+.login__inner-register {
+  position: absolute;
+  transform: translateX(350px);
+}
+
+.login__body.active .login__inner-register {
+  transform: translate(22px, -305px);
+}
+
+.login__close {
+  position: absolute;
+  transform: translate(125px, -15px);
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login__close i {
+  transform: translate(0px, 5px);
+}
+
+.login__body h3 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.login__input-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+
+.login__input-box input {
+  bottom: 15%;
+  transform: translateY(15%);
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 1.2px solid #ffffff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 13px 25px 13px 20px;
+}
+.login__input-box input::placeholder {
+  color: #fff;
+}
+
+.login__input-box i {
+  position: absolute;
+  right: 15px;
+  bottom: 30%;
+  transform: translateY(30%);
+  font-size: 2rem;
+}
+
+.login__input-remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+}
+
+.login__input-remember-forgot {
+  display: flex;
+  align-items: center;
+}
+
+.login__input-remember-forgot label {
+  font-size: 13px;
+}
+
+.login__input-remember-forgot a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.login__input-remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.login__btn {
+  width: 100%;
+  height: 35px;
+  background: var(--white-color);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10x rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  bottom: 35%;
+  transform: translateY(35%);
+}
+
+.login__register-link {
+  font-size: 13px;
+  text-align: center;
+}
+
+.login__register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login__register-link p a:hover {
+  text-decoration: underline;
+}
+
+.footer-main {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  text-decoration: none;
+  list-style: none;
+  font-family: "FC-Daypon", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 1.17rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.sec-1 {
+  padding-bottom: 30px;
+}
+
+.sec-1 img {
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.sec-1 p {
+  max-width: 250px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.sec-2 li a {
+  text-decoration: none;
+  color: #aaa7a7;
+}
+
+.sec-2 span {
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #908e8eb3;
+}
+
+.sec-3 p,
+.sec-2 a {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 60px;
+}
+
+.sec-3-vietnam {
+  padding-right: 20px;
+}
+
+.text-content {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-repeat: repeat-y;
+  background-image: url(../../assets/img/bg_vchuongVN.png);
+}
+
+.text-title {
+  padding: 0;
+  margin: 0;
+  font-size: 5rem;
+  font-family: "Go-around", sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0 0 6px rgb(185, 187, 231);
+  padding-top: 80px;
+  padding-bottom: 120px;
+  line-height: 65px;
+}
+
+.text-header {
+  padding: 0;
+  color: var(--white-color);
+  font-size: 2rem;
+  padding-bottom: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #00000098;
+  color: antiquewhite;
+  line-height: 30px;
+}
+
+.information {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+.information > div p,
+.information > div i {
+  margin: 0;
+  padding: 0;
+}
+
+.information p {
+  display: inline-block;
+}
+
+.text-image {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 50px;
+  padding-left: 70px;
+  border-image: 2px solid var(--white-color);
+  align-content: center;
+  justify-content: center;
+  max-width: 450px;
+  height: auto;
+}
+
+.text-main {
+  color: var(--white-color);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+  font-weight: bolder;
+  background-color: #00000091;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .text-title {
+    font-size: 4rem;
+    padding-bottom: 90px;
+  }
+  .text-header {
+    font-size: 1.3rem;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Văn chương & Cuộc sống</title>
+    <link
+      rel="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Datatype:wght@100..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Meddon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&family=Petit+Formal+Script&family=Smooch+Sans:wght@100..900&family=Unkempt:wght@400;700&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-vn">
+        <ul class="navbar__menu">
+          <li class="menu_close">
+            <i class="fa-solid fa-xmark" style="color: rgba(0, 0, 0, 0.77)"></i>
+          </li>
+          <li class="navbar__item navbar-item--icon">
+            <a href="#" class="navbar__menu-link">TRANG CHỦ</a>
+          </li>
+          <li class="navbar__item navbar-item--icon">
+            <a href="#vanchuongVN" class="navbar__menu-link"
+              >VĂN CHƯƠNG VIỆT NAM</a
+            >
+          </li>
+          <li class="navbar__item navbar-item--icon">
+            <a href="#tphammoi" class="navbar__menu-link">TÁC PHẨM MỚI</a>
+          </li>
+          <li class="navbar__item navbar-item--icon">
+            <a href="#vhocncngoai" class="navbar__menu-link"
+              >VĂN HỌC NƯỚC NGOÀI</a
+            >
+          </li>
+          <li class="navbar__item">
+            <span class="menu_small_icon">
+              <i class="fa-solid fa-star-of-david"></i>
+            </span>
+            <a href="#tramdung" class="navbar__menu-link">TRẠM DỪNG ĐỘC GIẢ</a>
+          </li>
+        </ul>
+        <li class="menu_open navbar__item">
+          <i class="fa-solid fa-list-ul" style="color: rgb(255, 255, 255)"></i>
+        </li>
+      </nav>
+    </header>
+
+    <div class="app">
+      <header class="header__bg">
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">
+              <a class="login_icon-login">
+                <i class="header_navbar-icon fa-solid fa-circle-user"></i>
+              </a>
+              <a class="login_icon-register">
+                <i class="header_navbar-icon fa-solid fa-user-plus"></i>
+              </a>
+
+              <a href="" class="header__navbar-icon-link">
+                <i class="header_navbar-icon fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li class="header__navbar-item">
+              <button
+                class="btn_register login_style header__navbar-item--separater"
+              >
+                Đăng ký
+              </button>
+            </li>
+
+            <li class="header__navbar-item">
+              <button class="btn_login login_style">Đăng nhập</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="login">
+      <div class="login__overlay"></div>
+      <div class="login__body">
+        <span class="login__close">
+          <i class="fa-solid fa-xmark" style="color: rgb(0, 0, 0)"></i>
+        </span>
+        <div class="login__inner-login">
+          <h3>Login</h3>
+          <form action="#">
+            <div class="login__input-box">
+              <input type="text" placeholder="Username" required />
+              <i class="fa-solid fa-user" style="color: rgb(255, 255, 255)"></i>
+            </div>
+
+            <div class="login__input-box">
+              <input type="password" placeholder="Password" required />
+              <i class="fa-solid fa-lock" style="color: rgb(252, 252, 252)"></i>
+            </div>
+            <div class="login__input-remember-forgot">
+              <label><input type="checkbox" />Remember me</label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="login__btn">Login</button>
+            <div class="login__register-link">
+              <p>
+                Don't have an account?
+                <a href="#" class="register-link">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="login__inner-register">
+          <h3>Registration</h3>
+          <form action="#">
+            <div class="login__input-box">
+              <input type="text" placeholder="Username" required />
+              <i class="fa-solid fa-user" style="color: rgb(255, 255, 255)"></i>
+            </div>
+            <div class="login__input-box">
+              <input type="text" placeholder="Email" required />
+              <i
+                class="fa-solid fa-envelope"
+                style="color: rgb(255, 255, 255)"
+              ></i>
+            </div>
+            <div class="login__input-box">
+              <input type="password" placeholder="Password" required />
+              <i class="fa-solid fa-lock" style="color: rgb(252, 252, 252)"></i>
+            </div>
+            <div class="login__input-remember-forgot">
+              <label
+                ><input type="checkbox" />I agree to the terms &
+                conditions</label
+              >
+            </div>
+            <button type="submit" class="login__btn">Register</button>
+            <div class="login__register-link">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="VanchuongVN" id="vanchuongVN">
+        <h2 class="section-title vchuongvn_icon">VĂN CHƯƠNG VIỆT NAM</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="VanchuongVN-list swiper-wrapper">
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp1_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/catchotoinhungngayxanhnangha.html"
+                      class="name"
+                      >Cất Cho Tôi Những Ngày Xanh Nắng Hạ <br />
+                      - Ngọc Minh -</a
+                    >
+                  </h3>
+                  <i class="feeback">Ngày phát hành: 15.11.2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp2_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/tiemtaphoatuoithodanglon-mochioday.html"
+                      class="name"
+                    >
+                      Tiệm Tạp Hóa Tuổi Thơ Đang Lớn <br />
+                      - Mochi Ở Đây -
+                    </a>
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 12.10.2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp3_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/comotmuahachuatunglangquen-minhsua.html"
+                      class="name"
+                      >Có Một Mùa Hè Chưa Từng Lãng Quên <br />
+                      - Minh & Sứa -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 21.11.2024</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp4_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/dangyeulasieunangluccuato-tra.html"
+                      class="name"
+                      >Đáng Yêu Là Siêu Năng Lực Của Tớ <br />
+                      - Trà -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 3.05.2024</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp5_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/nhungnoidaudutdoan-khiemkhuyet.html"
+                      class="name"
+                      >Những Nỗi Đau Đứt Đoạn - Khiếm Khuyết</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 24.12.2024</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp6_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/nhusaotroiomlaydaiduong-hngon.html"
+                      class="name"
+                      >Như Sao Trời Ôm Lấy Đại Dương - Hngoc</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 28.03.2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp7_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/vonglap-hoangnguyen.html"
+                      class="name"
+                      >Vòng Lặp - Nguyễn Hoàng Nguyên</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 08.2024</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp8_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/nhungnguoicanhgiuhienthuc-junepham.html"
+                      class="name"
+                      >Những Người Canh Giữ Hiện Thực <br />
+                      - June Phạm -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp9_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/suongkhoinhaque-nguyennhatanh.html"
+                      class="name"
+                      >Sương Khói Quê Nhà - Nguyễn Nhật Ánh</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2012</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn chương VN/tp10_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vchuongVN/dieuconlaigiuachungra-junan.html"
+                      class="name"
+                      >Điều Còn Lại Giữa Chúng Ta - Jun & An</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2023</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Tphammoi" id="tphammoi">
+        <h2 class="section-title-tpm vchuongvn_icon">TÁC PHẨM MỚI</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="VanchuongVN-list swiper-wrapper">
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp8_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/emseonomotlanyeukhac-3012oc.html"
+                      class="name"
+                      >Em Sẽ Ổn Ở Một Lần Yêu Khác <br />
+                      - 3012 & Ốc -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 06.04.2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp7_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/troitinhsaotoilamvay-vanphongphiduong.html"
+                      class="name"
+                      >Trời Tính Sao Tôi Làm Vậy <br />
+                      - Văn Phòng Phi Dương -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 03.04.2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp6_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/tiemquatangngongiac-parkchoeun.html"
+                      class="name"
+                      >Tiệm Quà Tặng Ngon Giấc - Park Cho Eun</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 01.04.2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp5_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/dainamkynhanliettruyen-lequydonvunguyenhanh.html"
+                      class="name"
+                      >Đại Nam Kỳ Nhân Liệt Truyện <br />
+                      - Lê Quý Đôn & Vũ Nguyên Hanh -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp4_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/anhdennoibencang-bananayoshimoto.html"
+                      class="name"
+                      >Ánh Đèn Nơi Bến Cảng - Banana Yoshimoto</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp3_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/docduong3-nguyenngoc.html"
+                      class="name"
+                      >Dọc Đường 3 - Nguyên Ngọc</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2026</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp2_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/bietdaungaymaicocauvong-gocnhocuahan.html"
+                      class="name"
+                      >Biết Đâu Ngày Mai Có Cầu Vồng <br />
+                      - Góc Nhỏ Của Han -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 29.12.2025</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Tác phẩm mới/tp1_1.webp"
+                    alt="User"
+                    class="user-image-2"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-tpmoi/sudungdicuangontu-kijulee.html"
+                      class="name"
+                      >Sự Dung Dị Của Ngôn Từ - Ki Ju Lee</a
+                    >
+                  </h3>
+                  <i class="feeback">Ngày phát hành: 16.12.2025</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Vanhocncngoai" id="vhocncngoai">
+        <h2 class="section-title-vhnn vchuongvn_icon">VĂN HỌC NƯỚC NGOÀI</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="VanchuongVN-list swiper-wrapper">
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp1_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/verity-bimatbichonvui-colleenhoover.html"
+                      class="name"
+                      >Verity - Bí Mật Bị Chôn Vùi <br />
+                      - Colleen Hoover -</a
+                    >
+                  </h3>
+                  <i class="feeback">Ngày phát hành: 2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp2_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/beartown-thitrannho,giacmolon-fredrikbackman.html"
+                      class="name"
+                      >Beartown - Thị Trấn Nhỏ, Giấc Mơ Lớn <br />
+                      - Fredrik Backman -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp3_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/bautroivamatdat-paologiordano.html"
+                      class="name"
+                      >Bầu Trời Và Mặt Đất - Paolo Giordano</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 01.04.2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp4_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/concuongsi-annieernaux.html"
+                      class="name"
+                      >Cơn Cuồng Si - Annie Ernaux</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 04.2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp5_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/noicodoncuacacsonguyento-paolagiordano.html"
+                      class="name"
+                      >Nỗi Cô Đơn Của Các Số Nguyên Tố <br />
+                      - Paolo Giordano -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2023</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp6_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/ngoinhabenbobienxanhtham-tjklune.html"
+                      class="name"
+                      >Ngôi Nhà Bên Bờ Biển Xanh Thẳm <br />
+                      - T.J.Klune -</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 03.04.2022</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp7_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/lutreduongtau-edithnesbit.html"
+                      class="name"
+                      >Lũ Trẻ Đường Tàu - Edith Nesbit</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 02.2018</i>
+                </li>
+
+                <li class="vanchuongvn swiper-slide">
+                  <img
+                    src="./assets/img/Văn học nước ngoài/tp8_1.webp"
+                    alt="User"
+                    class="user-image"
+                  />
+                  <h3>
+                    <a
+                      href="./assets/html-vhocncngoai/caonguyentruocmuatuyet-ogawamimei.html"
+                      class="name"
+                      >Cao Nguyên Trước Mùa Tuyết - Ogawa Mimei</a
+                    >
+                  </h3>
+                  <i class="dateNPH">Ngày phát hành: 2024</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mail" id="tramdung">
+        <h2 class="mail-title">TRẠM DỪNG ĐỘC GIẢ</h2>
+        <div class="mail_items">
+          <form
+            action="https://formsubmit.co/069d1afe4c754f6604d8d5c2a3d9e302"
+            method="POST"
+            id="waterform"
+          >
+            <div class="mailgroup" id="name-form">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="mailgroup" id="email-form">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="mailgroup" id="message-form">
+              <label for="message">Lời ngỏ</label>
+              <input id="message" name="message" />
+            </div>
+
+            <button class="mail-button" type="submit">GỬI TIN</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="footer-main">
+        <div class="sec-1">
+          <img src="./assets/img/logo.png" alt="" />
+          <p>
+            "Cuộc sống còn tuyệt vời biết bao trong thực tế và trên trang sách.
+            Nhưng cuộc sống cũng bi thảm biết bao. Cái đẹp còn trộn lẫn niềm sầu
+            buồn. Cái nên thơ còn lóng lánh giọt nước mắt ở đời." <br />- Nguyễn
+            Văn Thạc -
+          </p>
+
+          <div class="footer-icon">
+            <a href="#"
+              ><i
+                class="fa-brands fa-square-facebook"
+                style="color: rgb(192, 240, 255)"
+              ></i
+            ></a>
+            <a href="#">
+              <i
+                class="fa-brands fa-square-instagram"
+                style="color: rgb(139, 201, 219)"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-tiktok"
+                style="color: rgb(73, 129, 146)"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="sec-2">
+          <h4>Quick Links</h4>
+          <li>
+            <i
+              class="fa-regular fa-heart"
+              style="color: rgb(223, 195, 225)"
+            ></i>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <i
+              class="fa-regular fa-heart"
+              style="color: rgb(220, 251, 229)"
+            ></i>
+            <a href="#vanchuongVN">Vietnamese Literature</a>
+          </li>
+          <li>
+            <i
+              class="fa-regular fa-heart"
+              style="color: rgb(255, 255, 207)"
+            ></i>
+            <a href="#tphammoi">Recent Literary Works</a>
+          </li>
+          <li>
+            <i
+              class="fa-regular fa-heart"
+              style="color: rgb(168, 202, 252)"
+            ></i>
+            <a href="#vhocncngoai">World Literature</a>
+          </li>
+
+          <span>© 2026 All rights reserved.</span>
+        </div>
+
+        <div class="sec-3">
+          <h4>Contact us</h4>
+          <div>
+            <i
+              class="fa-solid fa-map-location-dot"
+              style="color: rgb(118, 134, 118)"
+            ></i>
+            <p>
+              Tân Hà Lâm Hà, Lâm Đồng <br />
+              Việt Nam
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-phone" style="color: rgb(191, 172, 0)"></i>
+            <p>+84 38****381</p>
+          </div>
+
+          <div>
+            <i
+              class="fa-solid fa-envelope"
+              style="color: rgb(198, 213, 255)"
+            ></i>
+            <p>quyenle16102009@gmail.com</p>
+          </div>
+
+          <div>
+            <p>...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
