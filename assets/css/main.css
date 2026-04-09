@@ -497,6 +497,12 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .header__bg {
+    min-height: 700px;
+  }
+}
+
 @media screen and (max-width: 660px) {
   .header__bg {
     background-image: url(../img/background_home650px.png);
@@ -530,5 +536,12 @@ body {
 @media screen and (max-width: 550px) {
   .mail {
     background-position: -80px -150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__bg {
+    min-height: 450px;
+    background-size: cover;
   }
 }
