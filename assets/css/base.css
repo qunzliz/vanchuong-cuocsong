@@ -388,3 +388,10 @@ html {
     padding-right: 10px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .text-main p,
+  .link-shoppe a {
+    font-size: 1.2rem;
+  }
+}

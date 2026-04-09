@@ -499,7 +499,19 @@ body {
 
 @media screen and (max-width: 800px) {
   .header__bg {
-    min-height: 700px;
+    max-height: 700px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title-tpm {
+    margin-bottom: 75px;
+  }
+
+  .section-title-vhnn {
+    margin-bottom: 40px;
   }
 }
 
@@ -543,5 +555,50 @@ body {
   .header__bg {
     min-height: 450px;
     background-size: cover;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title-tpm {
+    margin-bottom: 75px;
+  }
+
+  .section-title-vhnn {
+    margin-bottom: 40px;
+  }
+
+  .mailgroup input {
+    height: 40px;
+    width: 280px;
+    font-size: 1.2rem;
+  }
+
+  .mailgroup label {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .mailgroup {
+    margin-bottom: 15px;
+    padding-left: 50px;
+  }
+
+  .mail-title {
+    padding-bottom: 50px;
+  }
+
+  .mail {
+    height: 800px;
+    display: block;
+    background-image: url(../img/bg_mail.png);
+    padding: 0;
+    margin: 0;
+    background-position: -50px -120px;
+  }
+
+  .mail-button {
+    font-size: 3rem;
   }
 }
