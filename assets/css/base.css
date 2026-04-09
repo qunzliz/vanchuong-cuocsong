@@ -410,6 +410,11 @@ html {
     line-height: 15px;
   }
 
+  .text-header {
+    max-width: 350px;
+    line-height: 22px;
+  }
+
   .link-shoppe i {
     font-size: 1rem;
   }
@@ -427,7 +432,7 @@ html {
   }
 
   .text-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-bottom: 90px;
   }
   .text-header {
