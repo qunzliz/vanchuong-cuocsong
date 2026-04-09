@@ -556,14 +556,14 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) and (min-width: 400px) {
+@media screen and (max-width: 450px) and (min-width: 400px) {
   .mail {
     background-position: -80px -150px;
   }
 
   .header__bg {
     background-image: url(../img/background_home500px.png);
-    max-width: 600px;
+    max-width: 450px;
   }
 }
 
