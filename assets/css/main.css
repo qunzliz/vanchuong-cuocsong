@@ -206,6 +206,7 @@ body {
   margin-top: 40px;
   padding: 0;
   line-height: 60px;
+  margin-bottom: 70px;
 }
 
 .section-title-tpm {
@@ -217,9 +218,9 @@ body {
   text-shadow: 0 0 6px rgb(216, 229, 255);
   margin: 0;
   margin-top: 40px;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
   padding: 0;
-  line-height: 6px;
+  line-height: 60px;
 }
 
 .section-title-vhnn {
@@ -233,12 +234,13 @@ body {
   margin-top: 40px;
   padding: 0;
   line-height: 60px;
+  margin-bottom: 70px;
 }
 
 .section-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: auto;
   color: var(--white-color);
   justify-content: space-between;
 }
@@ -247,12 +249,14 @@ body {
   padding: 50px 0 50px;
   background-image: url(../img/bg_vchuongVN.png);
   margin: 0;
+  background-repeat: no-repeat;
   max-height: 650px;
 }
 
 .Tphammoi {
   padding: 50px 0 50px;
   background-image: url(../img/bg_tpmoi.png);
+  background-repeat: no-repeat;
   margin: 0;
   max-height: 750px;
 }
@@ -260,6 +264,7 @@ body {
 .Vanhocncngoai {
   padding: 50px 0 50px;
   background-image: url(../img/bg_tpncngoai.png);
+  background-repeat: no-repeat;
   margin: 0;
   max-height: 650px;
 }
@@ -330,7 +335,6 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_endemail.png);
-  background-repeat: no-repeat;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -405,6 +409,12 @@ body {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1400px) {
+  .header__bg {
+    height: 900px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .header__bg {
     background-image: url(../img/background_home900px.png);
@@ -422,6 +432,7 @@ body {
 
   .navbar__menu {
     position: fixed;
+    z-index: 2000;
     left: -300px;
     top: 0;
     width: 300px;
@@ -555,18 +566,6 @@ body {
   .header__bg {
     min-height: 450px;
     background-size: cover;
-  }
-
-  .section-title {
-    margin-bottom: 40px;
-  }
-
-  .section-title-tpm {
-    margin-bottom: 75px;
-  }
-
-  .section-title-vhnn {
-    margin-bottom: 40px;
   }
 
   .mailgroup input {

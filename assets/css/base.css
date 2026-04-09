@@ -289,7 +289,7 @@ html {
 .text-title {
   padding: 0;
   margin: 0;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "Go-around", sans-serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -303,7 +303,7 @@ html {
 .text-header {
   padding: 0;
   color: var(--white-color);
-  font-size: 2rem;
+  font-size: 3.3rem;
   padding-bottom: 20px;
   font-weight: bold;
   padding-top: 20px;
@@ -313,6 +313,7 @@ html {
   background-color: #00000098;
   color: antiquewhite;
   line-height: 30px;
+  font-family: "SVN-Appleberry", sans-serif;
 }
 
 .information {
@@ -321,8 +322,8 @@ html {
   padding-left: 40px;
   padding-right: 40px;
   color: var(--white-color);
-  font-size: 1.5rem;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6rem;
+  font-family: monospace;
   font-weight: bolder;
 }
 
@@ -352,8 +353,8 @@ html {
 
 .text-main {
   color: var(--white-color);
-  font-family: "SVN-Appleberry", sans-serif;
-  font-size: 1.5rem;
+  font-family: monospace;
+  font-size: 1.8rem;
   padding-left: 40px;
   padding-right: 40px;
   text-align: justify;
@@ -362,10 +363,13 @@ html {
   padding-top: 30px;
   margin-top: 30px;
   padding-bottom: 30px;
+  line-height: 22px;
   min-height: 400px;
 }
 
 .link-shoppe {
+  font-family: monospace;
+  font-size: 1.6rem;
   padding: 0;
   margin: 0;
   padding-top: 20px;
@@ -383,13 +387,13 @@ html {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .text-title {
-    font-size: 4rem;
+    font-size: 4.7rem;
     padding-bottom: 90px;
   }
   .text-header {
-    font-size: 1.3rem;
+    font-size: 2.7rem;
     padding: 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -398,8 +402,39 @@ html {
 
 @media screen and (max-width: 400px) {
   .text-main p,
+  .information {
+    font-size: 1.3rem;
+  }
+
+  .text-main p {
+    line-height: 15px;
+  }
+
+  .link-shoppe i {
+    font-size: 1rem;
+  }
+
+  .link-shoppe {
+    padding-left: 0;
+  }
+
   .link-shoppe a {
     font-size: 1.2rem;
+  }
+
+  .text-image {
+    max-height: 300px;
+  }
+
+  .text-title {
+    font-size: 4rem;
+    padding-bottom: 90px;
+  }
+  .text-header {
+    font-size: 2rem;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
