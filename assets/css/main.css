@@ -533,7 +533,7 @@ body {
   }
 }
 
-@media screen and (max-width: 660px) and (min-width: 400px) {
+@media screen and (max-width: 660px) and (min-width: 550px) {
   .header__bg {
     background-image: url(../img/background_home650px.png);
   }
@@ -568,6 +568,13 @@ body {
   .mailgroup {
     margin-bottom: 15px;
     padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__bg {
+    background-image: url(../img/background_home400px1.png);
+    min-height: 700px;
   }
 }
 
