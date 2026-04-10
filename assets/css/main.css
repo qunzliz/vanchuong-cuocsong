@@ -416,7 +416,7 @@ body {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1100px) {
   .header__bg {
     height: 900px;
   }
@@ -573,8 +573,8 @@ body {
 
 @media screen and (max-width: 400px) {
   .header__bg {
-    background-image: url(../img/background_home500px.png);
-    min-height: 400px;
+    background-image: url(../img/background_home400px1.png);
+    min-height: 580px;
     background-size: cover;
   }
 
